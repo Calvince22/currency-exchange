@@ -35,7 +35,7 @@ This is a single-page web application that allows users to convert currencies, k
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/calvince22/currency-converter-website.git
+   git clone https://github.com/calvince22/currency-converter.git
    ```
 2. Open the `index.html` file in a browser.
 
@@ -63,7 +63,7 @@ The app utilizes the `forEach` method to populate dropdown menus with currency o
 
 ## Live Demo
 
-[View the live demo here](#) *(replace `#` with the actual URL if hosted online)*
+[View the live demo here](https://calvince22.github.io/currency-exchange/) 
 
 ## License
 

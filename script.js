@@ -30,9 +30,9 @@ convertButton.addEventListener('click', () => {
         return;
     }
 
-    document.getElementById('amountError').textContent = '';
+    // document.getElementById('amountError').textContent = '';
 
-    fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${from}`)
+    fetch(`https://v6.exchangerate-api.com/v6/3158aa5a0cd960475500cb1e/latest/${from}`)
         .then(response => response.json())
         .then(data => {
             const rate = data.conversion_rates[to];
@@ -41,7 +41,7 @@ convertButton.addEventListener('click', () => {
 
             const li = document.createElement('li');
             li.innerHTML = `
-                ${resultDiv.textContent}
+                <p>${resultDiv.textContent}</p>
                 <button class="edit">Edit</button>
                 <button class="delete">Delete</button>
             `;
@@ -60,6 +60,3 @@ currencyList.addEventListener('click', (event) => {
 });
 
 // Clear history
-clearHistoryButton.addEventListener('click', () => {
-    currencyList.innerHTML = '';
-});

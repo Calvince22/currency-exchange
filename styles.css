@@ -2,29 +2,40 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color:rgb(125, 125, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    width: 400px;
+    margin-top:20px
 }
 
-.converter, .history-container {
+.card {
     background: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
+    text-align: center;
     color: #333;
 }
 
 .form-group {
     margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input, select, button {
@@ -46,35 +57,45 @@ button:hover {
     background-color: #0056b3;
 }
 
-.error-message {
-    color: red;
-    font-size: 12px;
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #007bff;
 }
 
-#currency-list {
+ul {
     list-style: none;
     padding: 0;
 }
 
-#currency-list li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+li {
+    margin: 10px 0;
+    background: #f8f9fa;
     padding: 10px;
-    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#currency-list button {
-    background-color: #e74c3c;
-    border: none;
+li button {
+    margin-left: 10px;
     padding: 5px 10px;
-    color: white;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-#currency-list button.edit {
-    background-color: #f39c12;
+.edit-button {
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+#result-div{
+    padding: 10px
 }
